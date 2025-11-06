@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合同信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 1.5715;
+            font-size: 14px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contract-container {
+            width: 100%;
+            /* max-width: 800px; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .page-header {
+            background-color: #001529;
+            color: white;
+            padding: 16px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .content-area {
+            flex: 1;
+            background: #fff;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ant-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ant-list-items {
+            flex: 1;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ant-list-item {
+            flex: 1;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .ant-list-item:last-child {
+            border-bottom: none;
+        }
+        
+        .ant-list-item-meta {
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+        
+        .ant-list-item-meta-content {
+            flex: 1;
+        }
+        
+        .ant-list-item-meta-title {
+            margin-bottom: 8px;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 500;
+            text-align: center; /* h4居中 */
+        }
+        
+        .ant-list-item-meta-description {
+            color: #666; /* 偏灰色字体 */
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left; /* 描述内容靠左 */
+        }
+    </style>
+</head>
+<body>
+    <div class="contract-container">
+        <div class="page-header">合同信息</div>
+        <div class="content-area">
+            <div class="ant-list">
+                <div class="ant-spin-nested-loading">
+                    <div class="ant-spin-container">
+                        <ul class="ant-list-items">
+                            <li class="ant-list-item">
+                                <div class="ant-list-item-meta">
+                                    <div class="ant-list-item-meta-content">
+                                        <h4 class="ant-list-item-meta-title">合同编号</h4>
+                                        <div class="ant-list-item-meta-description">HNGJ-2025-42</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ant-list-item">
+                                <div class="ant-list-item-meta">
+                                    <div class="ant-list-item-meta-content">
+                                        <h4 class="ant-list-item-meta-title">合同名称</h4>
+                                        <div class="ant-list-item-meta-description">水泥买卖合同</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ant-list-item">
+                                <div class="ant-list-item-meta">
+                                    <div class="ant-list-item-meta-content">
+                                        <h4 class="ant-list-item-meta-title">合同标的额（万元）</h4>
+                                        <div class="ant-list-item-meta-description">196.2</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ant-list-item">
+                                <div class="ant-list-item-meta">
+                                    <div class="ant-list-item-meta-content">
+                                        <h4 class="ant-list-item-meta-title">对方单位</h4>
+                                        <div class="ant-list-item-meta-description">广州腾港土木工程有限公司,中铁一局集团（海南）国际建设有限公司</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
